@@ -12,5 +12,3 @@ jobs:
 
       -name: Print Message
        run: echo "Benvenuti nella CI!"
-
- 
