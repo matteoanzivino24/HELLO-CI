@@ -1,0 +1,17 @@
+name: Ambiente Demo
+on:
+  push:
+    branches: ["develop"]
+
+env:
+  APP_NAME: "MyAwesomeApp"
+  APP_ENV: staging
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Stampa la variabile d'ambiente
+        run: |
+          echo "L'ambiente dell'applicazione è: $APP_ENV"
+          echo "La variabile è accessibile in ogni step di questo workflow."
