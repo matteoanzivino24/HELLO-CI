@@ -1,0 +1,22 @@
+{
+  "name": "hello-ci",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo 'Testing...' && exit 0",
+    "build": "mkdir dist&& touch dist/app.js"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matteoanzivino24/HELLO-CI.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matteoanzivino24/HELLO-CI/issues"
+  },
+  "homepage": "https://github.com/matteoanzivino24/HELLO-CI#readme"
+}
