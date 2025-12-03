@@ -6,12 +6,14 @@ on:
 env:
   APP_NAME: "MyAwesomeApp"
   APP_ENV: staging
-
+  SECRET_VAR: ${{ secrets.SUPER_SECRET }}
 jobs:
   build:
     runs-on: ubuntu-latest
+    
+      
     steps:
       - name: Stampa la variabile d'ambiente
         run: |
-          echo "L'ambiente dell'applicazione è: $APP_ENV"
+          echo "L'ambiente dell'applicazione è: $SECRET_VAR"
           echo "La variabile è accessibile in ogni step di questo workflow."
